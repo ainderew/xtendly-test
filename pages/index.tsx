@@ -5,6 +5,7 @@ import Image from "next/image";
 
 // assets
 import logo from "../public/assets/logo.png";
+import pointed from "../public/assets/pointed.png";
 
 const Home: NextPage = () => {
   return (
@@ -16,48 +17,66 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="banner-container w-full h-screen bg-[#ebebeb]">
-        <div className="w-full h-full bg-[url('../public/assets/bg.png')] bg-no-repeat bg-cover bg-center pt-44 pb-16 flex flex-col justify-between">
-          <div className="tagline-container w-[55%] min-h-[230px]  py-10 px-32 flex justify-end gradient-white">
-            <p className="text-textColor text-4xl font-medium italic leading-[1]">
-              <div className="inline mr-4">
-                <Image src={logo} height="80" width="318" objectFit="inherit" />
+        <div className="background-container w-full h-full bg-[url('../public/assets/bg.png')] bg-no-repeat bg-cover bg-center pt-44 pb-5 md:pb-16 flex flex-col justify-between">
+          <div className="TAGLINE-CONTAINER w-[70%] md:w-[60%] lg:w-[55%] min-h-[130px] md:min-h-[230px] 2xl:min-h-[350px] py-5 md:py-10 px-5 md:px-14 lg:px-24 xl:px-32 2xl:px-40 flex justify-end gradient-white">
+            <p className="TAGLINE text-textColor text-lg md:text-xl lg:text-xl xl:text-3xl 2xl:text-5xl font-semibold md:font-medium italic leading-[1] md:leading-[1]">
+              <div className="inline-block mr-2 md:mr-4 h-[40px] md:h-[50px] lg:h-[45px] xl:h-[55px] 2xl:h-[100px] w-[159px] md:w-[199px] lg:w-[179px] xl:w-[219px] 2xl:w-[398px] relative">
+                <Image
+                  src={logo}
+                  alt="FloQast"
+                  layout="fill"
+                  objectFit="inherit"
+                />
               </div>
               The <br />
-              <span className="text-main text-[3.5rem]">
+              <span className="text-main text-[1.27rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.7rem] 2xl:text-[3.8rem] font-semibold">
                 Fastest, Most Accurate <br />
               </span>
-              Way to Close Your Books!
+              Way to Close Your Books
             </p>
           </div>
 
           <div className="wrapper w-full">
-            <div className="form-container mx-auto min-h-[156px] w-[70%] bg-white grid grid-cols-[30%_1fr]">
-              <div className="form-web-left text-white bg-main flex flex-col justify-center items-center relative ">
-                <p className="font-bold text-[2rem] leading-none">
+            <div className="form-container mx-auto h-auto lg:min-h-[100px] xl:min-h-[118px] 2xl:min-h-[156px] w-[80%] md:w-[70%] bg-white grid grid-cols-1 lg:grid-cols-[30%_1fr] rounded-l-2xl">
+              {/* <div className="form-web-left text-white bg-white flex flex-col justify-center items-center relative bg-[url('../public/assets/pointed.png')] bg-cover bg-center"> */}
+              {/* FOR WEB DISPLAYS */}
+              <div className="form-web-left text-white bg-white hidden lg:flex flex-col justify-center items-center relative">
+                <Image src={pointed} layout="fill" />
+                <p className="font-bold xl:text-[1.5rem] 2xl:text-[2rem] leading-none z-10">
                   SCHEDULE A DEMO
                 </p>
-                <p className="text-[1.4rem]">Learn More About FloQast</p>
+                <p className="lg:text-xs xl:text-[1rem] 2xl:text-[1.4rem] z-10">
+                  Learn More About FloQast
+                </p>
+              </div>
+              {/* FOR TABLET/PHONE DISPLAYS */}
+              <div className="bg-main text-white lg:hidden flex flex-col justify-center items-center p-4">
+                <p className="font-bold leading-none text-[1.5rem] md:text-2xl">
+                  SCHEDULE A DEMO
+                </p>
+                <p className="text-base md:text-lg">Learn More About FloQast</p>
               </div>
 
-              <div className="form-web-right grid grid-rows-2">
-                <div className="top w-full flex justify-center items-center">
-                  <p className="text-textColor text-[1.7rem] font-semibold ">
+              <div className="form-web-right grid grid-rows-[1fr_2fr] lg:grid-rows-2 p-4 md:p-4">
+                <div className="TOP w-full flex justify-center items-center">
+                  <p className="text-textColor text-center text-[1rem] md:text-[1.3rem] xl:text-[1.25rem] 2xl:text-[1.7rem] font-semibold ">
                     Learn How FloQast Can{" "}
                     <span className="text-main">Improve Your Month-End</span>
                   </p>
                 </div>
-                <div className="bot flex gap-4 pl-16 pr-6">
+
+                <div className="BOT flex flex-col lg:flex-row items-start gap-2 md:gap-2 xl:gap-2 2xl:gap-4 md:p-4 lg:p-0 lg:pl-2 xl:pl-6 2xl:pl-16 lg:pr-2 xl:pr-3 2xl:pr-6">
                   <input
                     type="text"
                     placeholder="First Name*"
-                    className="flex-1 px-4 border-[1px] border-gray-200 h-[70%]"
+                    className="w-full xl:flex-grow px-4 border-[1px] border-gray-200 h-[3rem] lg:h-[90%]"
                   />
                   <input
                     type="text"
                     placeholder="Email*"
-                    className="flex-1 px-4 border-[1px] border-gray-200 h-[70%]"
+                    className="w-full xl:flex-grow px-4 border-[1px] border-gray-200 h-[3rem] lg:h-[90%]"
                   />
-                  <button className="flex-1 rounded-lg bg-main border-2 border-[#749D40] text-white h-[80%]">
+                  <button className="w-full xl:flex-grow lg:text-xs xl:text-sm 2xl:text-base xl:rounded-sm 2xl:rounded-lg bg-main border-2 border-[#749D40] text-white h-[3rem] lg:h-[90%]">
                     SCHEDULE NOW
                   </button>
                 </div>
