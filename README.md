@@ -18,7 +18,7 @@ yarn dev
 ![Large](/readme-images/large.png)
 
 ### Med 1366 x 768
-![Med](/readme-images/med.png)
+![Med](/readme-images/med.PNG)
 
 ### Tablet 820 x 1180
 ![Tablet](/readme-images/tablet.png)
