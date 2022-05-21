@@ -12,6 +12,10 @@ npm run dev
 # or
 yarn dev
 ```
+## Screens
+
+### Large 1920 x 969
+![Large](/readme-images/large.png)
 
 
 
