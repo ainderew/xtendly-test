@@ -1,3 +1,4 @@
+import {useEffect} from 'react'
 import type { NextPage } from "next";
 import Head from "next/head";
 // import {Head} from 'next/document'
@@ -8,6 +9,11 @@ import logo from "../public/assets/logo.webp";
 import pointed from "../public/assets/pointed.webp";
 
 const Home: NextPage = () => {
+
+  useEffect(()=>{
+    console.clear()
+  },[])
+
   return (
     <div className="main flex flex-col items-center">
       <Head>
