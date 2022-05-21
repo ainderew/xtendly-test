@@ -4,8 +4,8 @@ import Head from "next/head";
 import Image from "next/image";
 
 // assets
-import logo from "../public/assets/logo.png";
-import pointed from "../public/assets/pointed.png";
+import logo from "../public/assets/logo.webp";
+import pointed from "../public/assets/pointed.webp";
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="banner-container w-full h-screen bg-[#ebebeb]">
-        <div className="background-container w-full h-full bg-[url('../public/assets/bg.png')] bg-no-repeat bg-cover bg-center pt-44 pb-5 md:pb-16 flex flex-col justify-between">
+        <div className="background-container w-full h-full bg-[url('../public/assets/bg.webp')] bg-no-repeat bg-cover bg-center pt-44 pb-5 md:pb-16 flex flex-col justify-between">
           <div className="TAGLINE-CONTAINER w-[70%] md:w-[60%] lg:w-[55%] min-h-[130px] md:min-h-[230px] 2xl:min-h-[350px] py-5 md:py-10 px-5 md:px-14 lg:px-24 xl:px-32 2xl:px-40 flex justify-end gradient-white">
             <p className="TAGLINE text-textColor text-lg md:text-xl lg:text-xl xl:text-3xl 2xl:text-5xl font-semibold md:font-medium italic leading-[1] md:leading-[1]">
               <div className="inline-block mr-2 md:mr-4 h-[40px] md:h-[50px] lg:h-[45px] xl:h-[55px] 2xl:h-[100px] w-[159px] md:w-[199px] lg:w-[179px] xl:w-[219px] 2xl:w-[398px] relative">
