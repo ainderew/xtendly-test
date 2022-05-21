@@ -17,5 +17,13 @@ yarn dev
 ### Large 1920 x 969
 ![Large](/readme-images/large.png)
 
+### Med 1366 x 768
+![Med](/readme-images/med.png)
+
+### Tablet 820 x 1180
+![Tablet](/readme-images/tablet.png)
+
+### Phone 380 x 844
+![Phone](/readme-images/phone.png)
 
 
