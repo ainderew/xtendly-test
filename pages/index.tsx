@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/logo.png" />
       </Head>
 
-      <div className="banner-containerbg-[#ebebeb] h-screen w-full max-w-[1920px]">
+      <div className="banner-container bg-[#ebebeb] h-screen w-full max-w-[1920px]">
         <div className="background-container w-full max-w-[1920px] h-full bg-[url('../public/assets/bg.webp')] bg-no-repeat bg-cover bg-center pt-44 pb-5 md:pb-16 flex flex-col justify-between">
           <div className="TAGLINE-CONTAINER w-[70%] md:w-[60%] lg:w-[55%] min-h-[130px] md:min-h-[230px] 2xl:min-h-[320px] py-5 md:py-10 px-5 md:px-14 lg:px-24 xl:px-32 2xl:px-40 flex justify-end gradient-white">
             <p className="TAGLINE text-textColor text-lg md:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl font-semibold md:font-medium italic leading-[1] md:leading-[1] 2xl:leading-[1.2]">
