@@ -25,11 +25,19 @@ a {
 .gradient-white {
   background: linear-gradient(
     89.92deg,
-    #ffffff -0.67%,
+    rgba(255, 255, 255, 0.84) -0.67%,
     rgba(255, 255, 255, 0.85) 72.56%,
     rgba(255, 255, 255, 0) 101.64%
   );
 }
+/* .gradient-white {
+  background: linear-gradient(
+    89.92deg,
+    #ffffff -0.67%,
+    rgba(255, 255, 255, 0.85) 72.56%,
+    rgba(255, 255, 255, 0) 101.64%
+  );
+} */
 
 /* .form-web-left:after {
   content: "";
